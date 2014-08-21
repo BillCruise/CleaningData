@@ -20,3 +20,7 @@ The R script **run_analysis.R** will do the following:
 
 The Markdown file **CodeBook.md** describes the variables, the data, and the transformations and work performed by the R script to produce the tidy data set.
 
+
+Reference
+=========
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
