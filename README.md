@@ -18,5 +18,5 @@ The R script **run_analysis.R** will do the following:
 4. Appropriately labels the data set with descriptive variable names.  
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
 
-The Markdown file **CodeBook.md** describes the variables, the data, and the transformations and work performed by the R script to clean up the data.
+The Markdown file **CodeBook.md** describes the variables, the data, and the transformations and work performed by the R script to produce the tidy data set.
 
