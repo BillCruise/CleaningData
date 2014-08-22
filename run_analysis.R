@@ -8,7 +8,7 @@
 # The dataDir parameter is the directory where the data files are stored.
 # The default dataDir is "." Use the default if the original data files are extracted
 # to your current working directory.
-# Otherwise, pass in a path (e.g., "UCI HAR Dataset") to the extracted files.
+# Otherwise, pass in a path (e.g., "./UCI HAR Dataset") to the extracted files.
 run_analysis <- function(dataDir = ".") {
     # Load dataset from various data files
     
@@ -35,7 +35,7 @@ run_analysis <- function(dataDir = ".") {
     X <- rbind(X_train, X_test)
     
     # keep only the columns containing mean and standard deviation
-    colnames(DataSet) <- features[,2]
+    colnames(X) <- features[,2]
     meanSdCols <- grep("mean()|std()",colnames(X))
     X <- X[,meanSdCols]
     
@@ -54,4 +54,6 @@ run_analysis <- function(dataDir = ".") {
     # give a descriptive name to the new first column
     colnames(all.data)[1] <- "Labels"
     
+    # save the tidy data set
+    write.table(all.data, file="tidy_data.txt", row.name=FALSE)
 }
