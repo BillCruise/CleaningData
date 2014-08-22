@@ -33,7 +33,11 @@ run_analysis <- function(dataDir = ".") {
     
     # combine the X_test and X_train datasets by row
     X <- rbind(X_train, X_test)
+    
+    # keep only the columns containing mean and standard deviation
     colnames(DataSet) <- features[,2]
+    meanSdCols <- grep("mean()|std()",colnames(X))
+    X <- X[,meanSdCols]
     
     # combine the y_test and y_train datasets by row
     y <- rbind(y_train, y_test)
