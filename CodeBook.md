@@ -94,7 +94,7 @@ Transformations
 ===============
 The script in run_analysis.R transforms the original data set into a smaller tidy data set using the following transformations:
 
-Read data tables from
+1. Read data tables from
 
 - 'features.txt': List of all features.
 - 'activity_labels.txt': Links the class labels with their activity name.
@@ -104,3 +104,17 @@ Read data tables from
 - 'test/y_test.txt': Test labels.
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+2. Combine subject_test and subject_train data tables together by row.
+
+3. Combine X_train and X_test data tables together by row.
+
+4. Extract only the measurements on the mean and standard deviation for each measurement in the combined X data table.
+
+5. Combine the y_test and y_train class labels data tables by row.
+
+6. Merge the class labels with their activity names.
+
+7. Combine the class labels, subject ids and X data sets into one data table by column.
+
+8. Save the data table to a CSV file.
