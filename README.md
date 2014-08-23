@@ -3,7 +3,7 @@ CleaningData
 
 Course Project for Coursera's "Getting and Cleaning Data" section 006
 
-Prepares a tidy data that can be used for later analysis. Data for the project was collected from the accelerometers from the Samsung Galaxy S smartphone. The data was originally downloaded on August 19, 2014 from:
+Prepares a tidy data that can be used for later analysis. Data for the project was collected from the accelerometers from the Samsung Galaxy S smartphone. The complete data set was downloaded on August 19, 2014 from:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 

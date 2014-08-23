@@ -1,7 +1,7 @@
 Variables
 =========
-1. **ActivityLabels**  
-2. **SubjectNumber**  
+1. **ActivityLabels** - One of six activities performed by subjects (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+2. **SubjectNumber** - ID number (1 - 30) for subject who performed the activity in this record.
 3. **tBodyAcc-mean()-X**  
 4. **tBodyAcc-mean()-Y**  
 5. **tBodyAcc-mean()-Z**  
@@ -84,7 +84,23 @@ Variables
 
 Original Data
 =============
+Data for the project was collected from the accelerometers from the Samsung Galaxy S smartphone. The complete data set was downloaded on August 19, 2014 from:
 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+**Reference:** Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 Transformations
 ===============
+The script in run_analysis.R transforms the original data set into a smaller tidy data set using the following transformations:
+
+Read data tables from
+
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'train/X_train.txt': Training set.
+- 'train/y_train.txt': Training labels.
+- 'test/X_test.txt': Test set.
+- 'test/y_test.txt': Test labels.
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
