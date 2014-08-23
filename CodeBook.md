@@ -96,14 +96,14 @@ The script in run_analysis.R transforms the original data set into a smaller tid
 
 1. Read data tables from
 
-- 'features.txt': List of all features.
-- 'activity_labels.txt': Links the class labels with their activity name.
-- 'train/X_train.txt': Training set.
-- 'train/y_train.txt': Training labels.
-- 'test/X_test.txt': Test set.
-- 'test/y_test.txt': Test labels.
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-- 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+    - 'features.txt': List of all features.
+    - 'activity_labels.txt': Links the class labels with their activity name.
+    - 'train/X_train.txt': Training set.
+    - 'train/y_train.txt': Training labels.
+    - 'test/X_test.txt': Test set.
+    - 'test/y_test.txt': Test labels.
+    - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+    - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 2. Combine subject_test and subject_train data tables together by row.
 
