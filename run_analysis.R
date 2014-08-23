@@ -29,7 +29,7 @@ run_analysis <- function(dataDir = ".") {
     
     # combine the subject_test and subject_train datasets by row
     subject <- rbind(subject_test, subject_train)
-    colnames(subject) <- "subject"
+    colnames(subject) <- "SubjectNumber"
     
     # combine the X_test and X_train datasets by row
     X <- rbind(X_train, X_test)
@@ -52,8 +52,11 @@ run_analysis <- function(dataDir = ".") {
     all.data <- all.data[,-1]
     
     # give a descriptive name to the new first column
-    colnames(all.data)[1] <- "Labels"
+    colnames(all.data)[1] <- "ActivityLabels"
     
     # save the tidy data set
-    write.table(all.data, file="tidy_data.txt", row.name=FALSE)
+    write.table(all.data, file=paste(dataDir, "/tidy_data.txt", sep=""), sep=",", row.name=FALSE)
 }
+
+# read the data table back from file using
+# all.data <-  read.table("./UCI HAR Dataset/tidy_data.txt", header=TRUE, sep=",")
