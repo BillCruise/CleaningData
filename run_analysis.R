@@ -9,6 +9,9 @@
 # The default dataDir is "." Use the default if the original data files are extracted
 # to your current working directory.
 # Otherwise, pass in a path (e.g., "./UCI HAR Dataset") to the extracted files.
+
+require(reshape2)
+
 run_analysis <- function(dataDir = ".") {
     # Load dataset from various data files
     
@@ -56,7 +59,18 @@ run_analysis <- function(dataDir = ".") {
     
     # save the tidy data set
     write.table(all.data, file=paste(dataDir, "/tidy_data.txt", sep=""), sep=",", row.name=FALSE)
+    
+    # find the mean of all data values grouped by activity and subject
+    melted <- melt(all.data, id.var = c("ActivityLabels", "SubjectNumber"))
+    agg.data <- dcast(melted , ActivityLabels + SubjectNumber ~ variable, mean)
+    agg.data <- agg.data[order(agg.data$SubjectNumber),]
+    
+    # save the aggregate tidy data set
+    write.table(agg.data, file=paste(dataDir, "/tidy_means.txt", sep=""), sep=",", row.name=FALSE)
+    
 }
 
-# read the data table back from file using
+# read the tidy data table back from file using
 # all.data <-  read.table("./UCI HAR Dataset/tidy_data.txt", header=TRUE, sep=",")
+# read the means data table back from file using
+# agg.data <-  read.table("./UCI HAR Dataset/tidy_means.txt", header=TRUE, sep=",")
