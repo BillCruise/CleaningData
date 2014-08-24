@@ -72,5 +72,6 @@ run_analysis <- function(dataDir = ".") {
 
 # read the tidy data table back from file using
 # all.data <-  read.table("./UCI HAR Dataset/tidy_data.txt", header=TRUE, sep=",")
+
 # read the means data table back from file using
 # agg.data <-  read.table("./UCI HAR Dataset/tidy_means.txt", header=TRUE, sep=",")

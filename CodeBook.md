@@ -1,5 +1,15 @@
 Variables
 =========
+From the features_info.txt file in the original data set (see **Original Data** section below):
+
+> The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+> Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+> Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+The following features remain in the tidy data set after tranformations are applied (see **Transformations** section below):
+
 1. **ActivityLabels** - One of six activities performed by subjects (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 2. **SubjectNumber** - ID number (1 - 30) for subject who performed the activity in this record.
 3. **tBodyAcc-mean()-X**  
@@ -92,9 +102,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 Transformations
 ===============
-The script in run_analysis.R transforms the original data set into a smaller tidy data set using the following transformations:
+The script in run_analysis.R transforms the original data set into a smaller tidy data
 
-1. Read data tables from
+The original data set is read from:
 
     - 'features.txt': List of all features.
     - 'activity_labels.txt': Links the class labels with their activity name.
@@ -105,16 +115,22 @@ The script in run_analysis.R transforms the original data set into a smaller tid
     - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
     - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-2. Combine subject_test and subject_train data tables together by row.
+The following transformations are performed on the loaded data tables:
 
-3. Combine X_train and X_test data tables together by row.
+1. Combine subject_test and subject_train data tables together by row.
 
-4. Extract only the measurements on the mean and standard deviation for each measurement in the combined X data table.
+2. Combine X_train and X_test data tables together by row.
 
-5. Combine the y_test and y_train class labels data tables by row.
+3. Extract only the measurements on the mean and standard deviation for each measurement in the combined X data table.
 
-6. Merge the class labels with their activity names.
+4. Combine the y_test and y_train class labels data tables by row.
 
-7. Combine the class labels, subject ids and X data sets into one data table by column.
+5. Merge the class labels with their activity names.
 
-8. Save the data table to a CSV file.
+6. Combine the class labels, subject ids and X data sets into one data table by column.
+
+7. Save the data table to a CSV file (tidy_data.txt).
+
+8. Find the mean of all data values grouped by activity and subject.
+
+9. Save the aggredate data table to a CSV file (tidy_means.txt).
