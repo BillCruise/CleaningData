@@ -24,3 +24,7 @@ The Markdown file **CodeBook.md** describes the variables, the data, and the tra
 Reference
 =========
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+Dependencies
+============
+The run_analysis.R script depends on the 'reshape2' package to do the final data aggregation step.
