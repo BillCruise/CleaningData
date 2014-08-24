@@ -12,85 +12,85 @@ The following features remain in the tidy data set after tranformations are appl
 
 1. **ActivityLabels** - One of six activities performed by subjects (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 2. **SubjectNumber** - ID number (1 - 30) for subject who performed the activity in this record.
-3. **tBodyAcc-mean()-X**  
-4. **tBodyAcc-mean()-Y**  
-5. **tBodyAcc-mean()-Z**  
-6. **tBodyAcc-std()-X**  
-7. **tBodyAcc-std()-Y**  
-8. **tBodyAcc-std()-Z**  
-9. **tGravityAcc-mean()-X**  
-10. **tGravityAcc-mean()-Y**  
-11. **tGravityAcc-mean()-Z**  
-12. **tGravityAcc-std()-X**  
-13. **tGravityAcc-std()-Y**  
-14. **tGravityAcc-std()-Z**  
-15. **tBodyAccJerk-mean()-X**  
-16. **tBodyAccJerk-mean()-Y**  
-17. **tBodyAccJerk-mean()-Z**  
-18. **tBodyAccJerk-std()-X**  
-19. **tBodyAccJerk-std()-Y**  
-20. **tBodyAccJerk-std()-Z**  
-21. **tBodyGyro-mean()-X**  
-22. **tBodyGyro-mean()-Y**  
-23. **tBodyGyro-mean()-Z**  
-24. **tBodyGyro-std()-X**  
-25. **tBodyGyro-std()-Y**  
-26. **tBodyGyro-std()-Z**  
-27. **tBodyGyroJerk-mean()-X**  
-28. **tBodyGyroJerk-mean()-Y**   
-29. **tBodyGyroJerk-mean()-Z**  
-30. **tBodyGyroJerk-std()-X**  
-31. **tBodyGyroJerk-std()-Y**  
-32. **tBodyGyroJerk-std()-Z**  
-33. **tBodyAccMag-mean()**  
-34. **tBodyAccMag-std()**  
-35. **tGravityAccMag-mean()**  
-36. **tGravityAccMag-std()**  
-37. **tBodyAccJerkMag-mean()**  
-38. **tBodyAccJerkMag-std()**  
-39. **tBodyGyroMag-mean()**  
-40. **tBodyGyroMag-std()**  
-41. **tBodyGyroJerkMag-mean()**  
-42. **tBodyGyroJerkMag-std()**  
-43. **fBodyAcc-mean()-X**  
-44. **fBodyAcc-mean()-Y**  
-45. **fBodyAcc-mean()-Z**  
-46. **fBodyAcc-std()-X**  
-47. **fBodyAcc-std()-Y**   
-48. **fBodyAcc-std()-Z**  
-49. **fBodyAcc-meanFreq()-X**  
-50. **fBodyAcc-meanFreq()-Y**  
-51. **fBodyAcc-meanFreq()-Z**  
-52. **fBodyAccJerk-mean()-X**  
-53. **fBodyAccJerk-mean()-Y**  
-54. **fBodyAccJerk-mean()-Z**  
-55. **fBodyAccJerk-std()-X**  
-56. **fBodyAccJerk-std()-Y**  
-57. **fBodyAccJerk-std()-Z**  
-58. **fBodyAccJerk-meanFreq()-X**  
-59. **fBodyAccJerk-meanFreq()-Y**  
-60. **fBodyAccJerk-meanFreq()-Z**  
-61. **fBodyGyro-mean()-X**  
-63. **fBodyGyro-mean()-Y**  
-64. **fBodyGyro-mean()-Z**  
-65. **fBodyGyro-std()-X**  
-66. **fBodyGyro-std()-Y**  
-67. **fBodyGyro-std()-Z**  
-68. **fBodyGyro-meanFreq()-X**  
-69. **fBodyGyro-meanFreq()-Y**  
-70. **fBodyGyro-meanFreq()-Z**  
-71. **fBodyAccMag-mean()**  
-72. **fBodyAccMag-std()**  
-73. **fBodyAccMag-meanFreq()**  
-74. **fBodyBodyAccJerkMag-mean()**  
-75. **fBodyBodyAccJerkMag-std()**  
-76. **fBodyBodyAccJerkMag-meanFreq()**  
-77. **fBodyBodyGyroMag-mean()**  
-78. **fBodyBodyGyroMag-std()**  
-79. **fBodyBodyGyroMag-meanFreq()**  
-80. **fBodyBodyGyroJerkMag-mean()**  
-81. **fBodyBodyGyroJerkMag-std()**  
-82. **fBodyBodyGyroJerkMag-meanFreq()**  
+3. **tBodyAcc-mean()-X** - Body Acceleration time domain signal mean, X direction
+4. **tBodyAcc-mean()-Y** - Body Acceleration time domain signal mean, Y direction
+5. **tBodyAcc-mean()-Z** - Body Acceleration time domain signal mean, Z direction
+6. **tBodyAcc-std()-X** - Body Acceleration time domain signal standard deviation, X direction
+7. **tBodyAcc-std()-Y** - Body Acceleration time domain signal standard deviation, Y direction
+8. **tBodyAcc-std()-Z** - Body Acceleration time domain signal standard deviation, Z direction
+9. **tGravityAcc-mean()-X** - Gravity Acceleration time domain signal mean, X direction
+10. **tGravityAcc-mean()-Y** - Gravity Acceleration time domain signal mean, Y direction
+11. **tGravityAcc-mean()-Z** - Gravity Acceleration time domain signal mean, Z direction
+12. **tGravityAcc-std()-X** - Gravity Acceleration time domain signal standard deviation, X direction
+13. **tGravityAcc-std()-Y** - Gravity Acceleration time domain signal standard deviation, Y direction
+14. **tGravityAcc-std()-Z** - Gravity Acceleration time domain signal standard deviation, Z direction
+15. **tBodyAccJerk-mean()-X** - Body Acceleration Jerk time domain signal mean, X direction
+16. **tBodyAccJerk-mean()-Y** - Body Acceleration Jerk time domain signal mean, Y direction
+17. **tBodyAccJerk-mean()-Z** - Body Acceleration Jerk time domain signal mean, Z direction
+18. **tBodyAccJerk-std()-X** - Body Acceleration Jerk time domain signal standard deviation, X direction
+19. **tBodyAccJerk-std()-Y** - Body Acceleration Jerk time domain signal standard deviation, Y direction
+20. **tBodyAccJerk-std()-Z** - Body Acceleration Jerk time domain signal standard deviation, Z direction
+21. **tBodyGyro-mean()-X** - Body Gyroscope time domain signal mean, X direction
+22. **tBodyGyro-mean()-Y** - Body Gyroscope time domain signal mean, Y direction
+23. **tBodyGyro-mean()-Z** - Body Gyroscope time domain signal mean, Z direction
+24. **tBodyGyro-std()-X** - Body Gyroscope time domain signal standard deviation, X direction
+25. **tBodyGyro-std()-Y** - Body Gyroscope time domain signal standard deviation, Y direction
+26. **tBodyGyro-std()-Z** - Body Gyroscope time domain signal standard deviation, Z direction
+27. **tBodyGyroJerk-mean()-X** - Body Gyroscope Jerk time domain signal mean, X direction
+28. **tBodyGyroJerk-mean()-Y** - Body Gyroscope Jerk time domain signal mean, Y direction
+29. **tBodyGyroJerk-mean()-Z** - Body Gyroscope Jerk time domain signal mean, Z direction
+30. **tBodyGyroJerk-std()-X** - Body Gyroscope Jerk time domain signal standard deviation, X direction
+31. **tBodyGyroJerk-std()-Y** - Body Gyroscope Jerk time domain signal standard deviation, Y direction
+32. **tBodyGyroJerk-std()-Z** - Body Gyroscope Jerk time domain signal standard deviation, Z direction
+33. **tBodyAccMag-mean()** - Body Acceleration Magnitude time domain signal mean
+34. **tBodyAccMag-std()** - Body Acceleration Magnitude time domain signal standard deviation
+35. **tGravityAccMag-mean()** - Gravity Acceleration Magnitude time domain signal mean
+36. **tGravityAccMag-std()** - Gravity Acceleration Magnitude time domain signal standard deviation
+37. **tBodyAccJerkMag-mean()** - Body Acceleration Jerk Magnitude time domain signal mean
+38. **tBodyAccJerkMag-std()** - Body Acceleration Jerk Magnitude time domain signal standard deviation
+39. **tBodyGyroMag-mean()** - Body Gyroscope Magnitude time domain signal mean
+40. **tBodyGyroMag-std()** - Body Gyroscope Magnitude time domain signal standard deviation
+41. **tBodyGyroJerkMag-mean()** - Body Gyroscope Jerk Magnitude time domain signal mean
+42. **tBodyGyroJerkMag-std()** - Body Gyroscope Jerk Magnitude time domain signal standard deviation
+43. **fBodyAcc-mean()-X** - Body Acceleration frequency domain signal mean, X direction
+44. **fBodyAcc-mean()-Y** - Body Acceleration frequency domain signal mean, Y direction
+45. **fBodyAcc-mean()-Z** - Body Acceleration frequency domain signal mean, Z direction
+46. **fBodyAcc-std()-X** - Body Acceleration frequency domain signal standard deviation, X direction
+47. **fBodyAcc-std()-Y** - Body Acceleration frequency domain signal standard deviation, Y direction
+48. **fBodyAcc-std()-Z** - Body Acceleration frequency domain signal standard deviation, Z direction
+49. **fBodyAcc-meanFreq()-X** - Body Acceleration frequency domain signal standard deviation (weighted average), X direction
+50. **fBodyAcc-meanFreq()-Y** - Body Acceleration frequency domain signal standard deviation (weighted average), Y direction
+51. **fBodyAcc-meanFreq()-Z** - Body Acceleration frequency domain signal standard deviation (weighted average), Z direction
+52. **fBodyAccJerk-mean()-X** - Body Acceleration Jerk frequency domain signal mean, X direction
+53. **fBodyAccJerk-mean()-Y** - Body Acceleration Jerk frequency domain signal mean, Y direction
+54. **fBodyAccJerk-mean()-Z** - Body Acceleration Jerk frequency domain signal mean, Z direction
+55. **fBodyAccJerk-std()-X** - Body Acceleration Jerk frequency domain signal standard deviation, X direction
+56. **fBodyAccJerk-std()-Y** - Body Acceleration Jerk frequency domain signal standard deviation, Y direction
+57. **fBodyAccJerk-std()-Z** - Body Acceleration Jerk frequency domain signal standard deviation, Z direction
+58. **fBodyAccJerk-meanFreq()-X** - Body Acceleration Jerk frequency domain signal mean (weighted average), X direction
+59. **fBodyAccJerk-meanFreq()-Y** - Body Acceleration Jerk frequency domain signal mean (weighted average), Y direction
+60. **fBodyAccJerk-meanFreq()-Z** - Body Acceleration Jerk frequency domain signal mean (weighted average), Z direction
+61. **fBodyGyro-mean()-X** - Body Gyroscope frequency domain signal mean, X direction
+63. **fBodyGyro-mean()-Y** - Body Gyroscope frequency domain signal mean, Y direction
+64. **fBodyGyro-mean()-Z** - Body Gyroscope frequency domain signal mean, Z direction
+65. **fBodyGyro-std()-X** - Body Gyroscope frequency domain signal standard deviation, X direction
+66. **fBodyGyro-std()-Y** - Body Gyroscope frequency domain signal standard deviation, Y direction
+67. **fBodyGyro-std()-Z** - Body Gyroscope frequency domain signal standard deviation, Z direction
+68. **fBodyGyro-meanFreq()-X** - Body Gyroscope frequency domain signal mean (weighted average), X direction
+69. **fBodyGyro-meanFreq()-Y** - Body Gyroscope frequency domain signal mean (weighted average), Y direction
+70. **fBodyGyro-meanFreq()-Z** - Body Gyroscope frequency domain signal mean (weighted average), Z direction
+71. **fBodyAccMag-mean()** - Body Acceleration Magnitude frequency domain signal mean
+72. **fBodyAccMag-std()** - Body Acceleration Magnitude frequency domain signal standard deviation
+73. **fBodyAccMag-meanFreq()** - Body Acceleration Magnitude frequency domain signal mean (weighted average)
+74. **fBodyBodyAccJerkMag-mean()** - Body Acceleration Jerk Magnitude frequency domain signal mean
+75. **fBodyBodyAccJerkMag-std()** - Body Acceleration Jerk Magnitude frequency domain signal standard deviation
+76. **fBodyBodyAccJerkMag-meanFreq()** - Body Acceleration Jerk Magnitude frequency domain signal mean (weighted average)
+77. **fBodyBodyGyroMag-mean()** - Body Gyroscope Magnitude frequency domain signal mean
+78. **fBodyBodyGyroMag-std()** - Body Gyroscope Magnitude frequency domain signal standard deviation
+79. **fBodyBodyGyroMag-meanFreq()** - Body Gyroscope Magnitude frequency domain signal mean (weighted average)
+80. **fBodyBodyGyroJerkMag-mean()** - Body Gyroscope Jerk Magnitude frequency domain signal mean
+81. **fBodyBodyGyroJerkMag-std()** - Body Gyroscope Jerk Magnitude frequency domain signal standard deviation
+82. **fBodyBodyGyroJerkMag-meanFreq()** - Body Gyroscope Jerk Magnitude frequency domain signal mean (weighted average)
 
 Original Data
 =============
